@@ -17,7 +17,6 @@ options.add_argument('--window-size=1276,777')
 driver = webdriver.Chrome(DRIVER, chrome_options=options)
 driver.set_page_load_timeout(15)
 driver.get("https://www.google.co.jp")
-#driver.maximize_window()
 driver.save_screenshot(FILE_NAME)
 driver.quit()
 
